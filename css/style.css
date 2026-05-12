@@ -1,0 +1,384 @@
+/* QR Code Generator - Custom Styles */
+
+/* CSS Variables */
+:root {
+    --bg-light-from: #f8fafc;
+    --bg-light-via: #dbeafe;
+    --bg-light-to: #e0e7ff;
+    --bg-dark-from: #1e293b;
+    --bg-dark-via: #0f172a;
+    --bg-dark-to: #1e1b4b;
+}
+
+/* Body Backgrounds */
+body {
+    transition: background 0.3s ease, color 0.3s ease;
+    background: linear-gradient(135deg, var(--bg-light-from) 0%, var(--bg-light-via) 50%, var(--bg-light-to) 100%) !important;
+    min-height: 100vh;
+}
+
+.dark body {
+    background: linear-gradient(135deg, var(--bg-dark-from) 0%, var(--bg-dark-via) 50%, var(--bg-dark-to) 100%) !important;
+}
+
+/* Light Mode - Default Styles */
+.card-bg {
+    background-color: #ffffff !important;
+    border-color: #e5e7eb !important;
+}
+
+.input-bg,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+    background-color: #ffffff !important;
+    border-color: #d1d5db !important;
+    color: #111827 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6b7280 !important;
+}
+
+/* Light mode labels and text */
+label {
+    color: #374151 !important;
+}
+
+.text-gray-600 {
+    color: #4b5563 !important;
+}
+
+.text-gray-700 {
+    color: #374151 !important;
+}
+
+.text-gray-800 {
+    color: #1f2937 !important;
+}
+
+/* Dark Mode */
+.dark {
+    color-scheme: dark;
+    color: #e5e7eb;
+}
+
+.dark label {
+    color: #e5e7eb !important;
+}
+
+.dark .card-bg {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+.dark .input-bg {
+    background-color: #0f172a !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+
+.dark .input-bg:hover,
+.dark .input-bg:focus {
+    background-color: #1e293b !important;
+    border-color: #6366f1 !important;
+}
+
+.dark input[type="text"],
+.dark input[type="email"],
+.dark input[type="url"],
+.dark input[type="tel"],
+.dark input[type="file"],
+.dark select,
+.dark textarea {
+    background-color: #0f172a !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+
+.dark input::placeholder {
+    color: #64748b;
+}
+
+/* Text Colors - Dark Mode */
+.dark .text-gray-400 {
+    color: #9ca3af !important;
+}
+
+.dark .text-gray-500 {
+    color: #6b7280 !important;
+}
+
+.dark .text-gray-600 {
+    color: #cbd5e1 !important;
+}
+
+.dark .text-gray-700 {
+    color: #e2e8f0 !important;
+}
+
+.dark .text-gray-800 {
+    color: #f1f5f9 !important;
+}
+
+.dark .text-gray-900 {
+    color: #f8fafc !important;
+}
+
+/* Border Colors - Dark Mode */
+.dark .border-gray-100 {
+    border-color: #334155 !important;
+}
+
+.dark .border-gray-200 {
+    border-color: #475569 !important;
+}
+
+.dark .border-gray-300 {
+    border-color: #64748b !important;
+}
+
+.dark .border-gray-600 {
+    border-color: #475569 !important;
+}
+
+/* Background Colors - Dark Mode */
+.dark .bg-gray-50 {
+    background-color: #0f172a !important;
+}
+
+.dark .bg-gray-100 {
+    background-color: #1e293b !important;
+}
+
+.dark .bg-gray-200 {
+    background-color: #334155 !important;
+}
+
+/* Warning Box */
+.dark .bg-yellow-50 {
+    background-color: rgba(254, 243, 199, 0.1) !important;
+}
+
+.dark .text-yellow-800 {
+    color: #fef3c7 !important;
+}
+
+.dark .border-yellow-200 {
+    border-color: rgba(254, 243, 199, 0.3) !important;
+}
+
+.dark .border-yellow-800 {
+    border-color: rgba(254, 243, 199, 0.2) !important;
+}
+
+/* Hover States - Dark Mode */
+.dark .hover\:bg-gray-300:hover {
+    background-color: #475569 !important;
+}
+
+.dark .hover\:border-indigo-500:hover {
+    border-color: #6366f1 !important;
+}
+
+/* Navigation Buttons - Light mode overrides */
+.bg-gray-200 {
+    background-color: #e5e7eb !important;
+}
+
+.hover\:bg-gray-300:hover {
+    background-color: #d1d5db !important;
+}
+
+.dark .bg-gray-700 {
+    background-color: #374151 !important;
+}
+
+/* Step Wizard Tabs */
+.tab {
+    position: relative;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+    color: #6366f1;
+    font-weight: 600;
+    border-bottom-color: #6366f1;
+}
+
+.tab:not(.active) {
+    color: #6b7280;
+}
+
+.tab:not(.active):hover {
+    background-color: rgba(99, 102, 241, 0.05);
+    color: #6366f1;
+}
+
+.tab-content {
+    display: block;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+/* Data Type Cards */
+.data-card {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+    border-color: #e5e7eb;
+}
+
+.data-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+    border-color: #c7d2fe;
+}
+
+.data-card.active-card {
+    border-color: #6366f1 !important;
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.dark .data-card {
+    background-color: #1e293b;
+    border-color: #475569;
+}
+
+.dark .data-card:hover {
+    border-color: #6366f1;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+}
+
+.dark .data-card.active-card {
+    background: linear-gradient(135deg, #312e81 0%, #3730a3 100%);
+    border-color: #818cf8 !important;
+}
+
+/* Mobile: Smaller icons in data cards */
+@media (max-width: 768px) {
+    .data-card .text-4xl {
+        font-size: 1.75rem !important;
+        line-height: 1.75rem !important;
+    }
+    
+    .data-card {
+        padding: 0.75rem !important;
+    }
+    
+    .data-card .text-sm {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* Icon Fallback System */
+.icon-fallback {
+    display: none;
+}
+
+/* Show emoji fallback if Font Awesome fails to load */
+body.no-icons i {
+    display: none !important;
+}
+
+body.no-icons .icon-fallback {
+    display: inline !important;
+}
+
+/* QR Code Responsive */
+#qrcode {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcode canvas,
+#qrcode img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto !important;
+    display: block;
+}
+
+/* Desktop: respect user-selected size up to 500px */
+@media (min-width: 769px) {
+    #qrcode canvas,
+    #qrcode img {
+        max-width: 500px !important;
+        max-height: 500px !important;
+    }
+}
+
+/* Mobile: limit to smaller sizes for better display */
+@media (max-width: 768px) {
+    #qrcode canvas,
+    #qrcode img {
+        max-width: 350px !important;
+        max-height: 350px !important;
+    }
+    
+    /* Adjust preview container on mobile */
+    #qrcode {
+        min-height: 300px !important;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+    #qrcode canvas,
+    #qrcode img {
+        max-width: 280px !important;
+        max-height: 280px !important;
+    }
+    
+    #qrcode {
+        min-height: 260px !important;
+    }
+}
+
+/* Header buttons responsive */
+.header-buttons {
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .header-buttons {
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        justify-content: flex-end;
+    }
+    
+    .header-buttons button {
+        font-size: 0.875rem;
+    }
+}
+
+/* Error report button responsive */
+#errorReportBtn {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #errorReportBtn {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.75rem;
+    }
+    
+    #errorReportBtn span {
+        display: none !important;
+    }
+}

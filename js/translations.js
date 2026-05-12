@@ -1,0 +1,199 @@
+// Translations data
+const translations = {
+    vi: {
+        title: 'QR Code Generator',
+        subtitle: 'Tạo mã QR miễn phí với nhiều tùy chọn tùy chỉnh',
+        
+        // Headers
+        select_data_type: 'Chọn loại dữ liệu',
+        customize_qr: 'Tùy chỉnh giao diện QR',
+        tab_data_input: 'Nhập dữ liệu',
+        tab_customize: 'Tùy chỉnh',
+        
+        // QR Colors
+        qr_colors: 'Màu sắc QR Code:',
+        qr_color: 'Màu QR:',
+        bg_color: 'Màu nền:',
+        color_warning: '⚠️ Lưu ý: Dùng màu có độ tương phản cao (đen/trắng) để đảm bảo quét được tốt nhất. Màu sáng hoặc màu tương tự nhau có thể làm giảm khả năng scan.',
+        
+        // QR Size
+        qr_size: 'Kích thước QR Code:',
+        qr_size_input: 'Nhập kích thước (px):',
+        qr_size_hint: 'Khuyến nghị: 200-500px cho web, 300-800px cho in ấn',
+        
+        // Center customization
+        customize_center: 'Tùy chỉnh giữa QR:',
+        add_logo: '📷 Thêm Ảnh',
+        add_logo_hint: 'Gợi ý: Ảnh vuông (1:1), tối thiểu 200x200px, nền trong suốt tốt nhất',
+        add_text: '✏️ Thêm Văn bản',
+        no_add: '🚫 Không thêm gì',
+        none: 'Không thêm gì',
+        enter_text: 'Nhập text...',
+        text_color: 'Màu text:',
+        
+        // Campaign
+        advanced_settings: 'Cài đặt nâng cao',
+        campaign_desc: 'Thêm UTM parameters',
+        
+        // Export
+        export_format: 'Chọn định dạng file:',
+        qr_preview: 'Xem trước QR code:',
+        qr_preview_here: 'QR code sẽ hiển thị ở đây',
+        
+        // Field Labels
+        field_url: 'URL',
+        field_text: 'Văn bản',
+        field_email: 'Email',
+        field_phone: 'Số điện thoại',
+        field_message: 'Tin nhắn',
+        field_ssid: 'Tên WiFi (SSID)',
+        field_password: 'Mật khẩu',
+        field_security: 'Bảo mật',
+        field_username: 'Tên người dùng',
+        field_file: 'Chọn file',
+        field_address: 'Địa chỉ',
+        field_invite: 'Mã mời Discord',
+        
+        // Placeholders
+        placeholder_url: 'https://example.com',
+        placeholder_text: 'Nhập văn bản...',
+        placeholder_email: 'example@email.com',
+        placeholder_phone: '+84123456789',
+        placeholder_message: 'Nội dung tin nhắn',
+        placeholder_ssid: 'My WiFi',
+        placeholder_password: 'password123',
+        placeholder_username: 'username',
+        placeholder_address: '123 Đường ABC, TP.HCM',
+        placeholder_invite: 'abc123xyz',
+        
+        // Validation Errors
+        error_url_invalid: 'URL không hợp lệ. Vui lòng nhập đúng định dạng: https://example.com',
+        error_email_invalid: 'Email không hợp lệ',
+        error_phone_invalid: 'Số điện thoại không hợp lệ',
+        error_whatsapp_invalid: 'Số WhatsApp không hợp lệ. Vui lòng bao gồm mã quốc gia (+84...)',
+        error_username_invalid: 'Vui lòng nhập username hoặc link profile hợp lệ',
+        error_tiktok_invalid: 'Vui lòng nhập username TikTok hoặc link profile',
+        error_instagram_invalid: 'Vui lòng nhập username Instagram hoặc link profile',
+        error_telegram_invalid: 'Vui lòng nhập username Telegram',
+        error_spotify_invalid: 'Vui lòng nhập link Spotify hợp lệ',
+        
+        // Alert messages
+        alert_please_fill: 'Vui lòng nhập đầy đủ thông tin!',
+        alert_data_too_long: 'Dữ liệu quá dài! Vui lòng rút ngắn nội dung.',
+        alert_logo_load_failed: 'Không thể tải logo. Vui lòng thử file khác.',
+        alert_image_process_failed: 'Không thể xử lý ảnh. Vui lòng thử file khác.',
+        
+        // Logo processing messages
+        logo_processing: '⏳ Đang xử lý ảnh...',
+        logo_cropped: '✓ Ảnh đã được crop vuông:',
+        logo_error: '❌ Lỗi xử lý ảnh',
+        
+        // Error report
+        error_report_title: 'Báo Lỗi',
+        error_report_desc: 'Dưới đây là thông tin chi tiết về hoạt động của bạn. Hãy copy và gửi cho chúng tôi!',
+        error_report_copy: 'Copy Báo Cáo',
+        error_report_close: 'Đóng',
+        error_report_copied: 'Đã Copy!',
+        error_report_button: 'Báo Lỗi',
+        error_report_button_title: 'Báo lỗi hoặc gửi feedback',
+    },
+    en: {
+        title: 'QR Code Generator',
+        subtitle: 'Create free QR codes with multiple customization options',
+        
+        // Headers
+        select_data_type: 'Select data type',
+        customize_qr: 'Customize QR appearance',
+        tab_data_input: 'Data Input',
+        tab_customize: 'Customize',
+        
+        // QR Colors
+        qr_colors: 'QR Code Colors:',
+        qr_color: 'QR Color:',
+        bg_color: 'Background Color:',
+        color_warning: '⚠️ Note: Use high contrast colors (black/white) for best scanability. Light or similar colors may reduce scanning ability.',
+        
+        // QR Size
+        qr_size: 'QR Code Size:',
+        qr_size_input: 'Enter size (px):',
+        qr_size_hint: 'Recommended: 200-500px for web, 300-800px for print',
+        
+        // Center customization
+        customize_center: 'Customize center:',
+        add_logo: '📷 Add Logo',
+        add_logo_hint: 'Tip: Square image (1:1), minimum 200x200px, transparent background recommended',
+        add_text: '✏️ Add Text',
+        no_add: '🚫 None',
+        none: 'None',
+        enter_text: 'Enter text...',
+        text_color: 'Text color:',
+        
+        // Campaign
+        advanced_settings: 'Advanced Settings',
+        campaign_desc: 'Add UTM parameters',
+        
+        // Export
+        export_format: 'Choose file format:',
+        qr_preview: 'QR code Preview:',
+        qr_preview_here: 'QR code will be displayed here',
+        
+        // Field Labels
+        field_url: 'URL',
+        field_text: 'Text',
+        field_email: 'Email',
+        field_phone: 'Phone Number',
+        field_message: 'Message',
+        field_ssid: 'WiFi Name (SSID)',
+        field_password: 'Password',
+        field_security: 'Security',
+        field_username: 'Username',
+        field_file: 'Choose file',
+        field_address: 'Address',
+        field_invite: 'Discord Invite Code',
+        
+        // Placeholders
+        placeholder_url: 'https://example.com',
+        placeholder_text: 'Enter text...',
+        placeholder_email: 'example@email.com',
+        placeholder_phone: '+1234567890',
+        placeholder_message: 'Message content',
+        placeholder_ssid: 'My WiFi',
+        placeholder_password: 'password123',
+        placeholder_username: 'username',
+        placeholder_address: '123 Main St, City',
+        placeholder_invite: 'abc123xyz',
+        
+        // Validation Errors
+        error_url_invalid: 'Invalid URL. Please enter correct format: https://example.com',
+        error_email_invalid: 'Invalid email address',
+        error_phone_invalid: 'Invalid phone number',
+        error_whatsapp_invalid: 'Invalid WhatsApp number. Please include country code (+1...)',
+        error_username_invalid: 'Please enter valid username or profile link',
+        error_tiktok_invalid: 'Please enter TikTok username or profile link',
+        error_instagram_invalid: 'Please enter Instagram username or profile link',
+        error_telegram_invalid: 'Please enter Telegram username',
+        error_spotify_invalid: 'Please enter valid Spotify link',
+        
+        // Alert messages
+        alert_please_fill: 'Please fill in all required information!',
+        alert_data_too_long: 'Data is too long! Please shorten the content.',
+        alert_logo_load_failed: 'Failed to load logo. Please try another file.',
+        alert_image_process_failed: 'Failed to process image. Please try another file.',
+        
+        // Logo processing messages
+        logo_processing: '⏳ Processing image...',
+        logo_cropped: '✓ Image cropped to square:',
+        logo_error: '❌ Image processing error',
+        
+        // Error report
+        error_report_title: 'Error Report',
+        error_report_desc: 'Below is detailed information about your activity. Please copy and send it to us!',
+        error_report_copy: 'Copy Report',
+        error_report_close: 'Close',
+        error_report_copied: 'Copied!',
+        error_report_button: 'Report Error',
+        error_report_button_title: 'Report error or send feedback',
+    },
+};
+
+export { translations };
